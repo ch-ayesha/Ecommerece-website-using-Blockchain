@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3_Mart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo_white.png" height="30px">W3-Mart</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="singleproduct.html">Shop</a></li>
+                        <li><a href="account.html">Account</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!----------------Account Page---------------->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-2">
+                    <!--1 column for image and other for form-->
+                    <img src="images/mediamodifier-7cERndkOyDw-unsplash.jpg">
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container">
+                        <!--column for form-->
+                        <div class="form-btn">
+                            <!--button for login and register-->
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <!--use js-->
+                            <hr id="Indicator">
+                            <!--red orange bar-->
+                        </div>
+
+                        <form id="LoginForm">
+                            <!--login form-->
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="Submit" class="btn">Login</button>
+                            <a href="">Forgot Password?</a>
+                        </form>
+
+                        <form id="RegForm">
+                            <!--registraition form-->
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <input type="text" placeholder="Enter Security Question">
+                            <input type="text" placeholder="Enter Answer">
+                            <button type="Submit" class="btn">Register</button>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- ------------------ footer ----------------  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Company</h3>
+                    <ul>
+                        <li>About us</li>
+                        <li>Our Services</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Get help</h3>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Shipping</li>
+                        <li>Order status</li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+            <div class="row">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits Accessible to the Many.
+                </p>
+            </div>
+            <a href="" class="copyright">Copyright 2022   -   W3-Mart</a>
+        </div>
+    </div>
+    <!-- -----------------js for the toggle form ---------------  -->
+
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+        function register() {
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+
+        function login() {
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+    </script>
+
+
+</body>
+
+</html>

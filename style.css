@@ -1,0 +1,606 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --text-color: #555;
+    --text-color-2: #8a8a8a;
+    --highlight-color: #ff523b;
+    --dark-highlight-color: #563434;
+    /* --bg-color: #ffd6d6; */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 22px;
+    background: rgb(182, 180, 180);
+    margin-inline-start: 10px;
+}
+
+/* ion-icon {
+    width: 30px;
+    height: 20px;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ion-icon:hover {
+    cursor: pointer;
+}
+
+.search a {
+    display: flex;
+    margin: 30px ; 
+    position: relative;
+}
+
+header a ion-icon {
+    position: relative;
+    right: 3px;
+} */
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.img-slider img {
+    height: 400px;
+    width: 500px;
+}
+
+@keyframes slide {
+    0% {
+        left: 0px;
+    }
+
+    15% {
+        left: 0px;
+    }
+
+    20% {
+        left: -1080px;
+    }
+
+    32% {
+        left: -1080px;
+    }
+
+    35% {
+        left: -2160px;
+    }
+
+    47% {
+        left: -2160px;
+    }
+
+    50% {
+        left: -3240px;
+    }
+
+    63% {
+        left: -3240px;
+    }
+
+    66% {
+        left: -4320px;
+    }
+
+    79% {
+        left: -4320px;
+    }
+
+    82% {
+        left: -5400px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.img-slider {
+    display: flex;
+    float: left;
+    position: relative;
+    width: 500px;
+    height: 400px;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition-duration: 2s;
+}
+
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+p {
+    color: #555;
+    margin: 77px 0px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03)
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 57px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--highlight-color);
+    color: #fff;
+    padding: 8px 30px;
+    margin: 5px 21px;
+    border-radius: 30px;
+    transition: background 0.5;
+}
+
+.btn:hover {
+    background: var(--dark-highlight-color);
+}
+
+/* .header {
+     background: radial-gradient(#fff, #ffdfd6); 
+} */
+.header .row {
+    margin-top: 70px;
+}
+
+.categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: var(--text-color);
+}
+
+.title::after {
+    content: '';
+    background: var(--highlight-color);
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+h4 {
+    color: var(--text-color);
+    font-weight: normal;
+}
+
+.col-4 p {
+    font-size: 14px;
+}
+
+.rating .fa {
+    color: var(--highlight-color);
+}
+
+.col-4:hover {
+    transform: translateY(-5px);
+}
+
+.offer {
+    background: radial-gradient(#fff, var(--bg-color));
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .offer-img {
+    padding: 50px;
+}
+
+small {
+    color: var(--text-color);
+}
+
+.footer {
+    background: #000;
+    color: var(--text-color-2);
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p {
+    color: var(--text-color-2);
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+.copyright {
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 120px;
+}
+
+/* .footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+} */
+
+.row-2 {
+    justify-content: space-between;
+    /*create some space heading and selection panel*/
+    margin: 100px auto 50px;
+}
+
+select {
+    border: 1px solid #ff523b;
+    /*create red border around dropdown select panel*/
+    padding: 5px;
+}
+
+select:focus {
+    outline: none;
+    /*the issue was when create red border above, it shows red border but upon selecting other option it again becomes black, so we set outline none upon clicking and for clicking or tabing, focus is used*/
+}
+
+.page-btn {
+    margin: 0 auto 80px;
+}
+
+.page-btn span {
+    /*desigining pages no button which we have made using span tag*/
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover {
+    /*adds hover effect to page btn*/
+    background: #ff523b;
+    color: #ffff;
+}
+
+
+.single-product {
+    margin-top: 80px;
+}
+
+.single-product .col-2 img {
+    padding: 0;
+}
+
+.single-product .col-2 {
+    padding: 20px;
+    text-align: left;
+}
+
+.single-product select {
+    /*styling size dropdown*/
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.single-product h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.single-product input {
+    /*style no of products input*/
+    width: 50px;
+    height: 40px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+
+input:focus {
+    outline: none;
+}
+
+.single-product .fa {
+    /*styling icon with product details h3*/
+    color: #ff523b;
+    margin-left: 10px;
+}
+
+.small-img-row {
+    display: flex;
+    /*make all 4 images flexible*/
+    justify-content: space-between;
+    /*this will make all 4 images to take equal available space in single line without any gap, mean 25% each col, and to place gap between each col, we call col below and made 24% so to have a gap*/
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    /*this will make each column to take 24% space and 1% gap*/
+    cursor: pointer;
+}
+
+
+/*Cart Items*/
+.cart-page {
+    margin: 80px auto;
+}
+
+table {
+    width: 100%;
+    /*takes full width of the web page*/
+    border-collapse: collapse;
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: #ff523b;
+    font-weight: normal;
+}
+
+td {
+    padding: 10px 5px;
+}
+
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a {
+    color: #ff523b;
+    font-size: 12px;
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+td small {
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+    /*put content with max width at the end, if flex start, then put content at start with max width as we mentioned max width below*/
+}
+
+.total-price table {
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 480px;
+}
+
+td:last-child {
+    text-align: right;
+    /*align all last column values to right, in our case, these are prices*/
+}
+
+th:last-child {
+    text-align: right;
+}
+
+.btn1 {
+    display: inline-block;
+    background: var(--highlight-color);
+    color: #fff;
+    padding: 8px 30px;
+    margin: 57px -2px;
+    margin-bottom: -156px;
+    margin-right: -268px;
+    border-radius: 30px;
+    transition: background 0.5;
+}
+
+.btn1:hover {
+    background: var(--dark-highlight-color);
+}
+
+
+
+
+.account-page {
+    padding: 50px 0;
+    /* background: radial-gradient(#fff, #ffd6d6); */
+
+}
+
+.form-container {
+    /* in account page first column, we place an image, and in second coloumn we place form having following specs*/
+    background: #fff;
+    width: 300px;
+    height: 450px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
+    overflow: hidden;
+}
+
+.form-container span {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn {
+    display: inline-block;
+}
+
+.form-container form {
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .btn:focus {
+    outline: none;
+}
+
+#LoginForm {
+    left: -300px;
+
+}
+
+#RegForm {
+    left: 0;
+}
+
+form a {
+    font-size: 12px;
+}
+
+#Indicator {
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
