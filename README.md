@@ -72,9 +72,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 --------------------------------------------Blockchain based Ecommerce site----------------------------------------------
 This project is a blockchain based ecommerce site built upon Reactjs with smart contract in solidity.
-The goal is to make an easy to use and intuitive e commerce site where users from around the wrld can browse items and 
+The goal is to make an easy to use and intuitive e commerce site where users from around the world can browse items and 
 buy them using their crypto wallets.
 The site has three parts 
 1) The admin that controls the entire database and has access to the smart contract data as well.
-2) The seller portal where sells can add or remove items for sale
+2) The seller portal where sellers can add or remove items for sale
 3) The customer portal where customer can buy products check their cart and check out.
